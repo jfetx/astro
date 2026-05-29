@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  astro-site:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: astro_test_container
+    ports:
+      - "8085:80"
+    restart: always
